@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario de contacto. Enciclopedia Sempere-Oliver</title>
+    </head>
+
+    <body>
+        <a href="../../index/index.html"><img src="../../imagenes/LogoSO.png" alt=""></a>
+        <p>ENCICLOPEDIA MÉDICA SEMPERE-OLIVER</p>
+        <br/>
+
+        <h1>Formulario de contacto Enciclopedia Sempere-Oliver</h1>
+
+        <form action="formcontResp.html" method="post">
+            <p>Los apartados marcados con un asterisco (*) debe rellenarlos obligatoriamente.</p>
+            <p>
+                <label for="asunto">*Asunto</label>
+                <input type="text" name="asunto" id="asunto" required title="Asunto del caso">
+            </p>
+
+            <p>
+                <label for="comentario">*Comentario o Pregunta</label>
+                <textarea rows="6" cols="40" name="comentario" id="comentario" title="Indroduzca un comentario o pregunta" required></textarea>
+            </p>
+
+            <p>
+                <label for="yosoy">Seleccione su estado por el cual envía el formulario</label>
+                <select name="yosoy" id="yosoy">
+                    <option value="paciente">Paciente</option>
+                    <option value="cientifico">Científico</option>
+                    <option value="medico">Médico</option>
+                    <option value="educador">Educador</option>
+                    <option value="fabricante">Fabricante</option>
+                    <option value="periodista">Periodista</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="fnacimiento">Fecha de nacimiento</label>
+                <input type="date" name="fnacimiento" id="fnacimiento">
+            </p>
+
+            <p>
+                <fieldset>
+                    <legend>Sexo</legend>
+                        <p><label for="hombre">Hombre</label>
+                        <input type="radio" id="hombre" name="sexo" value="hombre"></p>
+
+                        <p></p><label for="mujer">Mujer</label>
+                        <input type="radio" id="mujer" name="sexo" value="mujer"></p>
+                        
+                        <p></p><label for="otro">Otro</label>
+                        <input type="radio" id="otro" name="sexo" value="otro"></p>
+                        
+
+                </fieldset>
+            </p>
+
+            <p>
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="ejemplo@email.com"  title="Introduce un email del tipo ejemplo@email.com">
+            </p>
+
+            <p>
+                <label for="info">Deseo recibir más información</label>
+                <input type="checkbox" name="info" id="info" title="Marca si deseas recibir más información">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar formulario" title="Botón de enviar formulario">
+            </p>
+        </form>
+
+        <br/>
+        <br/>
+        
+        <p>
+            <a href="../../index/index.html">Volver Atrás</a>
+            <a href="../../index/index.html">Volver a la página principal</a>
+        </p>
+
+        
+        <p>Copyright© 2022 David Oliver García y Jose Manuel Sempere García</p>
+
+    </body>
+
+</html>
